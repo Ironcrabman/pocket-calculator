@@ -4,39 +4,44 @@
 <head>
   <title>Pocket Calculator</title>
     <link href="calcStyles.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="./calcFunctions.js"></script>
 </head>
 <body>
   <h1 class="title" align="center">Pocket Calculator</h2>
 
-
 <div align= "center" class="button">
-<table id = table>
+<table class = table>
+      <tr align= "right">
+        <form>
+          <td height = "50px" colspan="5" class = "display"><input class ="textvalue" id = display></input></td>
+        </form>
+      </tr>
     <tr align = "center">
-      <td><button onclick=>AC</button>
+      <td><button onclick= "clear();">AC</button>
       <td><button onclick=>%</button>
       <td><button onclick=>+/-</button>
       <td><button onclick=>&#120529;</button>
       <td><button onclick=>X<sup id = "sup">y</sup></button>
     </tr>
     <tr align = "center">
-      <td><button onclick=>1</button>
-      <td><button onclick=>2</button>
-      <td><button onclick=>3</button>
+      <td><button value ="1" onclick= "number();">1</button>
+      <td><button onclick= "number();">2</button>
+      <td><button onclick= "number();">3</button>
       <td><button onclick=>X<sup id = "sup">2</sup></button>
-      <td><button onclick=>X<sup id = "sup">3</sup></button>
+      <td><button onclick=>X<sup  id = "sup">3</sup></button>
 
     </tr>
     <tr align = "center">
-      <td><button onclick=>4</button>
-      <td><button onclick=>5</button>
-      <td><button onclick=>6</button>
-      <td><button onclick=>*</button>
-      <td><button onclick=>/</button>
+      <td><button onclick= "number();">4</button>
+      <td><button onclick= "number();">5</button>
+      <td><button onclick= "number();">6</button>
+      <td><button onclick= "number();">*</button>
+      <td><button onclick= "number();">/</button>
     </tr>
     <tr align = "center">
-      <td><button onclick=>7</button>
-      <td><button onclick=>8</button>
-      <td><button onclick=>9</button>
+      <td><button onclick= "number();">7</button>
+      <td><button onclick= "number();">8</button>
+      <td><button onclick= "number();">9</button>
       <td><button onclick=>+</button>
       <td><button onclick=>-</button>
     </tr>

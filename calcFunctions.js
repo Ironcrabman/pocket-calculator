@@ -37,6 +37,7 @@ function equals(){
   if (document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   }else{
   good += standby
+  standby = ""
   answer = eval(good)
   document.getElementById("output").innerHTML = answer.toLocaleString();
   if (answer == "Infinity"){
@@ -44,7 +45,8 @@ function equals(){
     document.body.style.backgroundImage = "url('https://i.gifer.com/iCg.gif')";
   } else if (answer >= 1000000000) {
     let exponent = answer.toString().length-1;
-    document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;;
+    document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;
+
     }
 }
 }
@@ -100,7 +102,7 @@ function addition() {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   document.getElementById("output").innerHTML = "+"
 } else if (standby = ""){
-} else if (document.getElementById("output").innerHTML == answer){
+} else if (document.getElementById("output").innerHTML == answer.toLocaleString()){
   good = answer
   document.getElementById("output").innerHTML = "+"
 }else {
@@ -114,7 +116,7 @@ function subtraction() {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   document.getElementById("output").innerHTML = "-"
 } else if (standby = ""){
-} else if (document.getElementById("output").innerHTML == answer){
+} else if (document.getElementById("output").innerHTML == answer.toLocaleString()){
   good = answer
   document.getElementById("output").innerHTML = "-"
 }else {
@@ -128,7 +130,7 @@ function multiplication() {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   document.getElementById("output").innerHTML = "*"
 } else if (standby = ""){
-} else if (document.getElementById("output").innerHTML == answer){
+} else if (document.getElementById("output").innerHTML == answer.toLocaleString()){
   good = answer
   document.getElementById("output").innerHTML = "*"
 } else {
@@ -142,11 +144,10 @@ function division() {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   document.getElementById("output").innerHTML = "/"
 } else if (standby = ""){
-} else if (document.getElementById("output").innerHTML == answer){
+} else if (document.getElementById("output").innerHTML == answer.toLocaleString()){
   good = answer
   document.getElementById("output").innerHTML = "/"
-}
-else {
+} else {
   good += document.getElementById("output").innerHTML
   standby = ""
   document.getElementById("output").innerHTML = "/"
@@ -154,10 +155,21 @@ else {
 }
 
 function power1() {
-  standby = eval(standby * standby)
-if (standby.length > 9){
+  standby = eval(standby * standby * standby)
+if (standby.length > 8){
   let exponent = answer.toString().length-1;
-  document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;;
+  document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;
+}
+  document.getElementById("output").innerHTML = standby
+  if (document.getElementById("output").innerHTML.length > 8){
+  }
+}
+
+function power2() {
+  standby = eval(standby * standby * standby)
+if (standby.length > 8){
+  let exponent = answer.toString().length-1;
+  document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;
 }
   document.getElementById("output").innerHTML = standby
 }

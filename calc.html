@@ -4,6 +4,7 @@
 <head>
   <title>Pocket Calculator</title>
     <link href="calcStyles.css" type="text/css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="./calcFunctions.js"></script>
 </head>
 <body>
@@ -12,22 +13,22 @@
 <table class = table>
       <tr align= "right">
           <td height = "50px" colspan="5">
-            <h2 id="output">0<h2>
+            <h2 id="output" style="font-family: 'Orbitron', sans-serif;">0<h2>
           </td>
       </tr>
     <tr align = "center">
       <td><button onclick= "blank();">AC</button>
       <td><button onclick="perce();">%</button>
       <td><button onclick="negate();">+/-</button>
-      <td><button onclick="pi();">&#120529;</button>
-      <td><button onclick=>X<sup id = "sup">y</sup></button>
+      <td colspan="2"><button onclick="pi();">&#120529;</button>
+      <td>
     </tr>
     <tr align = "center">
       <td><button value = "1" onclick= "number(1);">1</button>
       <td><button value ="2" onclick= "number(2);">2</button>
       <td><button value ="3" onclick= "number(3);">3</button>
       <td><button onclick="power1();">X<sup id = "sup">2</sup></button>
-      <td><button onclick=>X<sup  id = "sup">3</sup></button>
+      <td><button onclick="power2();">X<sup  id = "sup">3</sup></button>
 
     </tr>
     <tr align = "center">

@@ -12,24 +12,21 @@
 <table class = table>
       <tr align= "right">
           <td height = "50px" colspan="5">
-            <form name = "form">
-              <input class = "textview" name = "textview" maxlength = 9 value = "0" disabled>
-              </input>
-            </form>
+            <h2 id="output">0<h2>
           </td>
       </tr>
     <tr align = "center">
       <td><button onclick= "blank();">AC</button>
-      <td><button onclick="percent();">%</button>
-      <td><button onclick=>+/-</button>
-      <td><button onclick=>&#120529;</button>
+      <td><button onclick="perce();">%</button>
+      <td><button onclick="negate();">+/-</button>
+      <td><button onclick="pi();">&#120529;</button>
       <td><button onclick=>X<sup id = "sup">y</sup></button>
     </tr>
     <tr align = "center">
       <td><button value = "1" onclick= "number(1);">1</button>
       <td><button value ="2" onclick= "number(2);">2</button>
       <td><button value ="3" onclick= "number(3);">3</button>
-      <td><button onclick=>X<sup id = "sup">2</sup></button>
+      <td><button onclick="power1();">X<sup id = "sup">2</sup></button>
       <td><button onclick=>X<sup  id = "sup">3</sup></button>
 
     </tr>
@@ -49,13 +46,14 @@
     </tr>
     <tr align = "center">
       <td colspan="2"><button value ="0" onclick="number(0);">0</button>
-      <td><button onclick=>.</button>
+      <td><button onclick="decimal();">.</button>
       <td colspan="2"><button onclick="equals();">=</button>
     </tr>
     <tr align = "center">
   </table>
 </div>
-
+<div class = "meme">
+</div>
 
 </body>
 <html>

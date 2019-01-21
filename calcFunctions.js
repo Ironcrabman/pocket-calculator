@@ -42,7 +42,7 @@ function equals(){
   document.getElementById("output").innerHTML = answer.toLocaleString();
   if (answer == "Infinity"){
     document.getElementById("output").innerHTML = "Error INFINITY"
-    document.body.style.backgroundImage = "url('https://i.gifer.com/iCg.gif')";
+    document.body.style.backgroundImage = "url('https://media1.tenor.com/images/589b49d44d8c83f984a5f0a21a749e13/tenor.gif?itemid=4104435')";
   } else if (answer >= 1000000000) {
     let exponent = answer.toString().length-1;
     document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;

@@ -160,9 +160,8 @@ if (standby.length >= 8){
   let exponent = standby.toString().length-1;
     standby = standby / (10 ** (exponent))
     document.getElementById('output').innerHTML = standby.toFixed(7) + 'e' + exponent;
-}
+}else{
   document.getElementById("output").innerHTML = standby
-  if (document.getElementById("output").innerHTML.length >= 8){
   }
 }
 
@@ -171,6 +170,8 @@ function power2() {
 if (standby.length >= 8){
   let exponent = standby.toString().length-1;
     answer = standby / (10 ** (exponent))
-    standby.getElementById('output').innerHTML = standby.toFixed(7) + 'e' + exponent;}
+    standby.getElementById('output').innerHTML = standby.toFixed(7) + 'e' + exponent;
+} else {
   document.getElementById("output").innerHTML = standby
+}
 }

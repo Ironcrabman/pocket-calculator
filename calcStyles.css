@@ -31,7 +31,7 @@ body{
 
 button {
   display: inline-block;
-  color: wheat;
+  color: NavajoWhite;
   width: 100%;
   height: 100%;
   font: 1.1em "Verdana", sans-serif;
@@ -64,6 +64,7 @@ input {
 
 .table{
   background-image: url(https://steamuserimages-a.akamaihd.net/ugc/93852611674339364/41DA8AE39BFCB486054908392B682EA374E59A1B/);
+  background-size: cover;
   width: 500px;
   height: 650px;
   margin: 20px

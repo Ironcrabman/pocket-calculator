@@ -155,7 +155,7 @@ function division() {
 }
 
 function power1() {
-  standby = eval(standby * standby * standby)
+  standby = eval(standby * standby)
 if (standby.length >= 8){
   let exponent = standby.toString().length-1;
     standby = standby / (10 ** (exponent))

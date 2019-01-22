@@ -167,11 +167,23 @@ if (standby.toString().length >= 8){
 
 function power2() {
   standby = eval(standby * standby * standby)
-if (standby.toString.length >= 8){
+if (standby.toString().length >= 8){
   let exponent = standby.toString().length-1;
-    answer = standby / (10 ** (exponent))
-    standby.getElementById('output').innerHTML = standby.toFixed(7) + 'e' + exponent;
-} else {
+    standby = standby / (10 ** (exponent))
+    document.getElementById('output').innerHTML = standby.toFixed(7) + 'e' + exponent;
+}else{
   document.getElementById("output").innerHTML = standby
+  }
 }
+
+function ran() {
+  temp = (Math.random() * 100);
+  if (temp <= 48) {
+    document.body.style.backgroundImage = "url('https://static1.squarespace.com/static/55a40adce4b0d82f937ebb59/55cab4f1e4b03aba01d2167c/571170177da24f0475d527eb/1545850703854/tumblr_nqbjooUMGV1qfrhqho1_r1_500.gif')";
+  }else if (temp >= 50) {
+        document.body.style.backgroundImage = "url('https://thumbs.gfycat.com/InfantileGrouchyAmericanwirehair-small.gif')";
+  }else {
+    document.body.style.backgroundImage = "url('http://images4.fanpop.com/image/photos/23400000/Spongebob-Squarepants-GIFs-spongebob-squarepants-23417483-500-366.gif')";
+
+  }
 }

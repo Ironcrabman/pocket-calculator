@@ -65,7 +65,7 @@ input {
 }
 
 .table{
-  background-image: url(https://media.giphy.com/media/S6ccZ74oYMLPG/giphy.gif);
+  background-color: transparent;
   width: 500px;
   height: 650px;
   margin: 20px

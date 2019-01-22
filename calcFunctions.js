@@ -156,20 +156,21 @@ function division() {
 
 function power1() {
   standby = eval(standby * standby * standby)
-if (standby.length > 8){
-  let exponent = answer.toString().length-1;
-  document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;
+if (standby.length >= 8){
+  let exponent = standby.toString().length-1;
+    standby = standby / (10 ** (exponent))
+    document.getElementById('output').innerHTML = standby.toFixed(7) + 'e' + exponent;
 }
   document.getElementById("output").innerHTML = standby
-  if (document.getElementById("output").innerHTML.length > 8){
+  if (document.getElementById("output").innerHTML.length >= 8){
   }
 }
 
 function power2() {
   standby = eval(standby * standby * standby)
-if (standby.length > 8){
-  let exponent = answer.toString().length-1;
-  document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;
-}
+if (standby.length >= 8){
+  let exponent = standby.toString().length-1;
+    answer = standby / (10 ** (exponent))
+    standby.getElementById('output').innerHTML = standby.toFixed(7) + 'e' + exponent;}
   document.getElementById("output").innerHTML = standby
 }

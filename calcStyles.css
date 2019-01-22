@@ -36,7 +36,7 @@ button {
   height: 100%;
   font: 1.1em "Verdana", sans-serif;
   background-image: url(http://cdn.lowgif.com/full/a2bf1be0cd57f5e5-infinite-rotation-tumblr.gif);
-  background-size: cover;
+  background-size: contain;
   border-radius: 30px
   }
 

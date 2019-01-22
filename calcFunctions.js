@@ -45,8 +45,8 @@ function equals(){
     document.body.style.backgroundImage = "url('https://media1.tenor.com/images/589b49d44d8c83f984a5f0a21a749e13/tenor.gif?itemid=4104435')";
   } else if (answer >= 1000000000) {
     let exponent = answer.toString().length-1;
-    document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;
-
+    answer = answer / (10 ** (exponent))
+    document.getElementById('output').innerHTML = answer.toFixed(7) + 'e' + exponent;
     }
 }
 }

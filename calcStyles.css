@@ -5,6 +5,10 @@ input {
   text-align: right;
 }
 
+h2 {
+ color: FireBrick; 
+}
+
 h1{
   color: white;
 }

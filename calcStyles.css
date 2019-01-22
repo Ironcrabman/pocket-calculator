@@ -35,7 +35,7 @@ body{
 
 button {
   display: inline-block;
-  color: NavajoWhite;
+  background-color: NavajoWhite;
   width: 100%;
   height: 100%;
   font: 1.1em "Verdana", sans-serif;
